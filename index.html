@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+</head>
+<link rel="stylesheet" href="index.css"></link>
+
+<body>
+        <h1>PDF Viewer</h1>
+    
+    <!-- <div id="pdf-container" style="background-color: aqua; padding: 12px; overflow: auto;width: 800px;"></div> -->
+    <div id="canvas_container">
+        <canvas id="pdf-container"></canvas>
+    </div>
+    <div id="navigation-controls">
+        <button id="go_previous">Previous</button>
+        <input id="current_page" type="number"></input>
+        <button id="go_next">Next</button>
+    </div>
+</body>
+<script type="module" src="index.js"></script>
+
+<script src="./node_modules/pdfjs-dist/build/pdf.js"></script>
+<script src="./node_modules/pdfjs-dist/build/pdf.worker.js"></script>
+
+</html>
